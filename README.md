@@ -6,22 +6,22 @@
 
 先看你是什麼系統：
 
-Bash
+```
 cat /etc/os-release
 ps aux | grep sshd
 Debian / Ubuntu 最常見的：
 
-
-""
+```
 systemctl stop ssh &&
 systemctl stop sshd &&
 systemctl disable ssh
 ""
-
+```
 已隱藏4行
 Alpine (65M雞最推薦的系統)：
 
-Bash
+```
 rc-service sshd stop &&
 rc-update del sshd &&
 apk del openssh &&
+```
