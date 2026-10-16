@@ -20,6 +20,10 @@ systemctl stop rsyslog
 systemctl disable rsyslog
 systemctl stop getty@tty1
 systemctl disable getty@tty1
+systemctl stop e2scrub_reap.service
+systemctl disable e2scrub_reap.service
+systemctl stop e2scrub_all.timer
+systemctl disable e2scrub_all.timer
 ```
 已隱藏4行
 Alpine (65M雞最推薦的系統)：
