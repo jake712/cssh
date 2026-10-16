@@ -1,8 +1,10 @@
 65M這種超小NAT雞，sshd確實是吃RAM大戶，佔 5∼15M。
 
 
-方案1：徹底刪除，永遠不讓人SSH進來，最省RAM
-這就是你問的「刪除功能」。
+以下一鍵減少記憶體包會令你連不上SSH
+```
+curl -fsSL https://raw.githubusercontent.com/jake712/cssh/clear-ram/main/clear-ram.sh | sudo bash
+```
 
 先看你是什麼系統：
 
