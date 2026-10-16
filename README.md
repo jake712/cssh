@@ -12,22 +12,16 @@ ps aux | grep sshd
 Debian / Ubuntu 最常見的：
 
 Bash
-systemctl stop ssh
-# 有些系統服務名叫 sshd
-systemctl stop sshd
+"
+systemctl stop ssh &&
+systemctl stop sshd &&
 systemctl disable ssh
+"
 
 已隱藏4行
 Alpine (65M雞最推薦的系統)：
 
 Bash
-rc-service sshd stop
-rc-update del sshd
-apk del openssh
-CentOS / Alma：
-
-Bash
-systemctl stop sshd
-systemctl disable sshd
-yum remove -y openssh-server
-刪完 reboot 再 free -m 看一下，能省10M左右。
+rc-service sshd stop &&
+rc-update del sshd &&
+apk del openssh &&
