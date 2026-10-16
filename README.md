@@ -12,9 +12,14 @@ ps aux | grep sshd
 Debian / Ubuntu 最常見的：
 ```
 Debian / Ubuntu 最常見的：
-```systemctl stop ssh &&
-systemctl stop sshd &&
-systemctl disable ssh
+```
+systemctl stop ssh 
+systemctl stop sshd 
+systemctl disable ssh 
+systemctl stop rsyslog 
+systemctl disable rsyslog
+systemctl stop getty@tty1
+systemctl disable getty@tty1
 ```
 已隱藏4行
 Alpine (65M雞最推薦的系統)：
