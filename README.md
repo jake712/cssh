@@ -11,7 +11,7 @@ cat /etc/os-release
 ps aux | grep sshd
 Debian / Ubuntu 最常見的：
 ```
-
+Debian / Ubuntu 最常見的：
 ```systemctl stop ssh &&
 systemctl stop sshd &&
 systemctl disable ssh
