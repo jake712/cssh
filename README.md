@@ -3,7 +3,7 @@
 
 以下一鍵減少記憶體包會令你連不上SSH
 ```
-curl -fsSL https://raw.githubusercontent.com/jake712/cssh/clear-ram/main/clear-ram.sh | sudo bash
+bash <(curl -fsSL https://raw.githubusercontent.com/jake712/cssh/clear-ram/main/clearRam.sh)
 ```
 
 先看你是什麼系統：
