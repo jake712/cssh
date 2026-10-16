@@ -11,12 +11,12 @@ cat /etc/os-release
 ps aux | grep sshd
 Debian / Ubuntu 最常見的：
 
-Bash
-"
+
+""
 systemctl stop ssh &&
 systemctl stop sshd &&
 systemctl disable ssh
-"
+""
 
 已隱藏4行
 Alpine (65M雞最推薦的系統)：
