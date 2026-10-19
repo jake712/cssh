@@ -54,6 +54,8 @@ systemctl stop e2scrub_all.timer || true
 echo "[12/12] systemctl disable e2scrub_all.timer"
 systemctl disable e2scrub_all.timer || true
 
+echo "[12/12] systemctl disable cron"
+systemctl stop cron
 echo "=== 执行完成 ==="
 echo "注意: SSH 已禁用，下次重启后也无法远程连接。如需恢复需通过本地控制台执行:"
 echo "systemctl enable ssh sshd getty@tty1 rsyslog && systemctl start ssh sshd getty@tty1 rsyslog"
